@@ -1,3 +1,3 @@
-websitesinde iki adet db bağlantısı bulunmakta
-1. Proje/admin/Database/connectdb.php
-2.Proje/admin/account/database.php
+There are two db connections on the website.
+1. admin/Database/connectdb.php
+2.admin/account/database.php
