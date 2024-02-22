@@ -1,0 +1,41 @@
+:root {
+    --primarycolor: white;
+    --secondarycolor: black;
+    --bgcolor: #008FFF;
+      
+  }
+  
+  .darkmode {
+    --primarycolor: black;
+    --secondarycolor: white;
+    --bgcolor: #34495E;
+  }
+
+.comments-container{
+    width: 80%;
+    height: 84vh;
+    position: relative;
+    top:17vh;
+    left: 15%;
+    color: white;
+}
+table{
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+.Btn{
+    padding: 0 1rem 0 1rem;
+    color: blue;
+    border :none;
+    background: none;
+    font-size: 15px;
+}
+.Btn span{
+    margin-left: 5px;
+    position: relative;
+    bottom: 7px;
+}
+.Btn:hover{
+    font-size: large;
+}

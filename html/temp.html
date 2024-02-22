@@ -1,0 +1,20 @@
+
+    <script>
+        function resize() {
+            var article = document.getElementById('article').offsetHeight;
+            var sidebar = document.getElementById('sidebar').offsetHeight;
+            console.log(article);
+            console.log(sidebar);
+            if (sidebar > article) {
+                article = sidebar;
+                document.getElementById('article').style.height = document.getElementById('sidebar').style.height = article + 'px';
+            }
+            else {
+                sidebar = article;
+                document.getElementById('sidebar').style.height = document.getElementById('article').style.height = sidebar + 'px';
+            }
+            window.onload = resize;
+        }
+    </script>
+</body>
+</html>

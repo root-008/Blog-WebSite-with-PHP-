@@ -1,0 +1,97 @@
+:root {
+    --primarycolor: white;
+    --secondarycolor: black;
+}
+
+.dark-theme {
+    --primarycolor: black;
+    --secondarycolor: white;
+}
+
+
+article {
+    position: relative;
+    left: 200px;
+    width: 100%;
+    background-color: var(--primarycolor);
+    height: 830px;
+    overflow: auto;
+    top: 7.6rem
+}
+
+.container {
+    border: 1px solid var(--secondarycolor);
+    position: relative;
+    margin: 20px 30px;
+    width: 87%;
+    min-height: 100px;
+}
+
+.table-search{
+    height: 5vh;
+    width: 100%;
+}
+.gameform{
+    position: relative;
+    left: 87%;
+}
+
+.table-headers td {
+    text-align: center;
+    border: 1px solid var(--secondarycolor);
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--secondarycolor)
+}
+
+.table-content {
+    text-align: center;
+    border: 1px solid var(--secondarycolor);
+    color: var(--secondarycolor)
+}
+
+.truncate {
+    display: inline-block;
+    width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Btn {
+    text-decoration: none;
+    color: var(--secondarycolor);
+    background-color: var(--primarycolor);
+    border: none;
+    float: left;
+    position: relative;
+    left: 15px;
+    font-size: 17px;
+}
+
+.Btn span {
+    position: relative;
+    bottom: 5px;
+}
+
+.Btn:hover {
+    opacity: .7;
+    color: blue;
+}
+
+.makale_ekle {
+    margin-left: 40%;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--secondarycolor);
+}
+
+.makale_ekle span {
+    position: relative;
+    bottom: 5px;
+}
+
+.makale_ekle span:hover {
+    opacity: .7;
+    color: blue;
+}

@@ -1,0 +1,65 @@
+:root {
+    --primarycolor: white;
+    --secondarycolor: black;
+    --bgcolor:  #2C3F50;
+}
+
+.dark-theme {
+    --primarycolor: black;
+    --secondarycolor: white;
+    --bgcolor: #34495E;
+}
+
+.users-container{
+    position: relative;
+    min-height: 70vh;
+    width: 80%;
+    left:15%;
+    top:10rem;
+}
+
+.head{
+    height: 8vh;
+}
+
+.head th ,.row td {
+    border: 1px solid var(--secondarycolor);
+    position: relative;
+    padding: 0 10px 0 10px;
+    top: 1rem;
+    left: 1rem;
+    height: 5vh;
+}
+.head tr, .row td{
+    position: relative;
+    left: 1.5rem;
+    color: var(--secondarycolor);
+}
+
+.row{
+    position: relative;
+    left: 1rem;
+    bottom: 1.4rem;
+    text-align: center;
+    font-size: 17px;
+}
+.username, .id{
+    font-size: 22px;
+}
+
+.btn{
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 17px;
+    color: var(--secondarycolor);
+}
+.btn span{
+    position: relative;
+    left: 8px;
+    bottom: 6px;
+}
+.btn:hover{
+    opacity: .7;
+    color: blue;
+}

@@ -1,0 +1,58 @@
+:root {
+  --primarycolor: black;
+  --secondarycolor: white;
+}
+
+.dark-theme {
+  --primarycolor: white;
+  --secondarycolor: black;
+}
+
+.article-container {
+  width: 70%;
+  min-height: 1000px;
+  float: left;
+  color: var(--secondarycolor);
+  padding: 5rem 15rem 8rem 15rem;
+}
+
+.title {
+  font-size: 52px;
+}
+
+.container-info {
+  font-size: 20px;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+
+.content-icon {
+  float: left;
+  margin: 0 0 0 1rem;
+  color: var(--secondarycolor);
+}
+
+.author {
+  float: left;
+  padding: 0 2rem 2rem 0;
+  margin: 0 0 0 0.5rem;
+  height: 2rem;
+  font-size: 20px;
+  color: var(--secondarycolor);
+}
+
+.type {
+  float: left;
+  padding: 0 2rem 0 0;
+  height: 2rem;
+  color: var(--secondarycolor);
+}
+
+.time {
+  height: 2rem;
+  color: var(--secondarycolor);
+}
+.content{
+  font-size: 18px;
+  color: var(--secondarycolor);
+}

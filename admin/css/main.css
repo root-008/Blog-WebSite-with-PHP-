@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primarycolor: white;
+  --secondarycolor: black;
+  --bgcolor: #008FFF;
+    
+}
+
+.darkmode {
+  --primarycolor: black;
+  --secondarycolor: white;
+  --bgcolor: #34495E;
+}
+
+body {
+  margin: auto;
+  padding: auto;
+  position: relative;
+  bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  background-color: #ff9d00;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66' stroke-opacity='0.06' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+#banner {
+  background: var(--bgcolor);
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+}
+
+#logo img {
+  float: left;
+  width: 8%;
+  height: 80px;
+  position: relative;
+  top: 15px;
+  left: 30px;
+}
+
+#slogan {
+  position: relative;
+  top: 20px;
+  left: 30%;
+  color: var(--primarycolor);
+}
+
+#searchbar {
+  float: right;
+  position: relative;
+  right: 170px;
+  bottom: 25px;
+}
+
+#searchbar input {
+  font-size: 20px;
+  position: relative;
+  right: 10px;
+  padding: 3px;
+}
+
+#searchbar button {
+  position: relative;
+  bottom: 4px;
+  left: 5px;
+  font-size: 18px;
+  color: var(--primarycolor);
+  border-radius: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid var(--primarycolor);
+}
+
+#searchbar button:hover {
+  opacity: .7;
+  border: 1px solid blue;
+}
+
+#loginpanel button {
+  position: relative;
+  font-size: 23px;
+  color: var(--primarycolor);
+  border-radius: 20px;
+  float: right;
+  bottom: 2vh;
+  right: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--primarycolor);
+}
+
+#loginpanel button:hover {
+  text-decoration: underline;
+  opacity: .8;
+  border: 1px solid blue;
+}
+
+.dark-mode-toggle {
+  position: relative;
+  float: right;
+  right: 2rem;
+  bottom: 1.8vh;
+}
+
+.dark-mode-toggle button {
+  background-color: var(--bgcolor);
+  font-size: 17px;
+  border: 1px solid var(--bgcolor);
+}
+
+.dark-mode-toggle i {
+  color: var(--primarycolor);
+}
+
+.dark-mode-toggle button:hover {
+  opacity: .7;
+}
+
+/*sidebar*/
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: var(--bgcolor);
+  position: fixed;
+  float: left;
+  top: 6.24rem;
+  height: 52.5rem;
+  overflow: auto;
+  border: none;
+}
+
+/* Sidebar links */
+.sidebar button {
+  display: block;
+  color: var(--secondarycolor);
+  background-color: var(--bgcolor);
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
+/* Links on mouse-over */
+.sidebar button:hover {
+  background-color: var(--bgcolor);
+  color: var(--primarycolor);
+}
+
+.sidebar i {
+  float: left;
+  position: relative;
+  left: 15px;
+}
+
+.sidebar span {
+  position: relative;
+  font-size: 20px;
+}
+
+.categories-links {
+  display: none;
+  position: absolute;
+  background-color: var(--bgcolor);
+  width: 100%;
+  z-index: 1;
+}
+
+.categories-links a {
+  display: block;
+  float: none;
+  color: var(--secondarycolor);
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.categories-links a:hover {
+  background-color: var(--bgcolor);
+  color: var(--primarycolor);
+}
+
+.category:hover .categories-links {
+  display: block;
+}
+
+.users a{
+  text-decoration: none;
+  color: var(--secondarycolor);
+}
+
+.users{
+  padding-left: 4rem;
+  padding-top: 1rem;
+}
+
+/*article*/
+
+.container-article {
+  width: 80%;
+  height: 750px;
+  float: left;
+  position: relative;
+  margin: 50px 300px;
+  top: 7rem;
+}
+
+.container-article a {
+  text-decoration: none;
+}
+
+.container-article span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:15px;
+  font-size: 27px;
+  color: var(--primarycolor);
+}
+
+.container-categories2,
+.container-games2,
+.container-science_technology2,
+.container-entertainment2,
+.container-gallery2 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--secondarycolor);
+  float: left;
+  transition: all .3s;
+}
+
+.container-categories2:hover,
+.container-games2:hover,
+.container-science_technology2:hover,
+.container-entertainment2:hover,
+.container-gallery2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.container-categories2 i,
+.container-games2 i,
+.container-science_technology2 i,
+.container-entertainment2 i,
+.container-gallery2 i {
+  font-size: 70px;
+  color: var(--primarycolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container-categories2 i:hover,
+.container-games2 i:hover,
+.container-science_technology2 i:hover,
+.container-entertainment2 i:hover,
+.container-gallery2 i:hover {
+  opacity: .8;
+}
+
+.container-categories1,
+.container-games1,
+.container-science_technology1,
+.container-entertainment1,
+.container-gallery1 {
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all .3s;
+  margin: 100px 0px 0px 150px;
+  float: left;
+}
+
+.container-categories1:hover,
+.container-games1:hover,
+.container-science_technology1:hover,
+.container-entertainment1:hover,
+.container-gallery1:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.50);
+}
+
+.admin-pan-users{
+  position: relative;
+  left: 25px
+}
